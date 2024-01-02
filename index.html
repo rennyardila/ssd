@@ -325,9 +325,10 @@
                             data-epayco-response='https://keen-kashata-becd0a.netlify.app/gracias'  
                             data-epayco-confirmation='https://keen-kashata-becd0a.netlify.app/gracias'
                             data-epayco-button="http://imgfz.com/i/oUD64Ct.png"
+                            document.getElementById('boton').addEventListener("click", ePayco.checkout.open)
                             > 
                         </script>
-                        <input type="button" value="Pagar con ePayco" onclick="ePayco.checkout.open('script')">
+                        <input type="button" id="boton" value="Pagar con ePayco">
                     </form> <!-- ================================================================== -->
             </div>
         </div>
