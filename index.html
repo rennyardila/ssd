@@ -305,7 +305,9 @@
                     <p>Compra 1000 seguidores en instagram el aumento dura de 1 a 3 dias.  </p>
                     <span class="tachado">50.000 COP</span>
                     <p class="precio"><b>30.000 COP</b></p>
-                    <button onclick="ejecutarPago()">Pagar</button>
+                    <form id="epaycoForm">
+                        <button onclick="ejecutarPago()">Pagar</button>
+                    </form>
                     <script>
                         function ejecutarPago() {
                             var script = document.createElement('script');
