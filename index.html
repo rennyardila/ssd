@@ -305,31 +305,19 @@
                     <p>Compra 1000 seguidores en instagram el aumento dura de 1 a 3 dias.  </p>
                     <span class="tachado">50.000 COP</span>
                     <p class="precio"><b>30.000 COP</b></p>
-                                    <!-- =====================================================================
-          ///////////   Este es su botón de Botón de pago ePayco   ///////////
-         ===================================================================== -->
-                    <form>
-                        <script src='https://checkout.epayco.co/checkout.js'
-                            data-epayco-key='f6078fd236a757f9f5a61da215ea0156' 
-                            class='epayco-button' 
-                            data-epayco-amount='150000' 
-                            data-epayco-tax='0.00'  
-                            data-epayco-tax-ico='0.00'               
-                            data-epayco-tax-base='150000'
-                            data-epayco-name='seguidores' 
-                            data-epayco-description='seguidores' 
-                            data-epayco-currency='cop'    
-                            data-epayco-country='CO' 
-                            data-epayco-test='false' 
-                            data-epayco-external='false' 
-                            data-epayco-response='https://keen-kashata-becd0a.netlify.app/gracias'  
-                            data-epayco-confirmation='https://keen-kashata-becd0a.netlify.app/gracias'
-                            data-epayco-button="http://imgfz.com/i/oUD64Ct.png"
-                            > 
-                        </script>
-                        <input type="button" value="Pagar Ahora" onclick="ePayco.checkout.open(this)">
+                    <button onclick="ejecutarPago()">Pagar</button>
+                    <script>
+                        function ejecutarPago() {
+                            var script = document.createElement('script');
+                            script.src = 'https://checkout.epayco.co/checkout.js';
+                            script.setAttribute('data-epayco-key', 'f6078fd236a757f9f5a61da215ea0156');
+                            script.setAttribute('class', 'epayco-button');
+                            // Agrega los demás atributos según tus necesidades
+                    
+                            document.body.appendChild(script);
+                        }
+                    </script>
 
-                    </form> <!-- ================================================================== -->
             </div>
         </div>
         
