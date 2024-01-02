@@ -308,38 +308,7 @@
                     <form class="epaycoForm">
                         <button onclick="ejecutarPago()">Pagarya</button>
                     </form>
-                    <script>
-                        document.addEventListener('DOMContentLoaded', function() {
-                            function ejecutarPago() {
-                                var script = document.createElement('script');
-                                script.src = 'https://checkout.epayco.co/checkout.js';
-                                script.setAttribute('data-epayco-key', 'f6078fd236a757f9f5a61da215ea0156');
-                                script.setAttribute('class', 'epayco-button');
-                                script.setAttribute('data-epayco-amount', '150000');
-                                script.setAttribute('data-epayco-tax', '0.00');
-                                script.setAttribute('data-epayco-tax-ico', '0.00');
-                                script.setAttribute('data-epayco-tax-base', '150000');
-                                script.setAttribute('data-epayco-name', 'seguidores');
-                                script.setAttribute('data-epayco-description', 'seguidores');
-                                script.setAttribute('data-epayco-currency', 'cop');
-                                script.setAttribute('data-epayco-country', 'CO');
-                                script.setAttribute('data-epayco-test', 'false');
-                                script.setAttribute('data-epayco-external', 'false');
-                                script.setAttribute('data-epayco-response', '');
-                                script.setAttribute('data-epayco-confirmation', '');
-                    
-                                var formulario = document.querySelector('.epaycoForm');
-                                if (formulario !== null) {
-                                    formulario.appendChild(script);
-                                } else {
-                                    console.error('El formulario con clase "epaycoForm" no fue encontrado.');
-                                }
-                            }
-                            window.ejecutarPago = ejecutarPago;
-
-                        });
-                    </script>
-
+                </div>
             </div>
         </div>
         
