@@ -501,7 +501,8 @@ section .contactForm .form form .inputBox label {
     font-weight: 700;
 }
 
-section .contactForm .form form .inputBox input[type="text"], 
+section .contactForm .form form .inputBox input[type="text"],
+section .contactForm .form form .inputBox input[type="number"], 
 section .contactForm .form form .inputBox input[type="email"], 
 section .contactForm .form form .inputBox textarea { 
     border: none;
@@ -512,7 +513,8 @@ section .contactForm .form form .inputBox textarea {
     resize: none;
 }
 
-section .contactForm .form form .inputBox input[type="text"]:focus, 
+section .contactForm .form form .inputBox input[type="text"]:focus,
+section .contactForm .form form .inputBox input[type="number"]:focus, 
 section .contactForm .form form .inputBox input[type="email"]:focus, 
 section .contactForm .form form .inputBox textarea:focus { 
     outline: 2px solid red;
