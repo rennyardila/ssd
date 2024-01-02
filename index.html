@@ -305,7 +305,7 @@
                     <p>Compra 1000 seguidores en instagram el aumento dura de 1 a 3 dias.  </p>
                     <span class="tachado">50.000 COP</span>
                     <p class="precio"><b>30.000 COP</b></p>
-                    <form id="epaycoForm">
+                    <form class="epaycoForm">
                         <button onclick="ejecutarPago()">Pagarya</button>
                     </form>
                     <script>
@@ -328,7 +328,7 @@
                             script.setAttribute('data-epayco-confirmation', '');
                             script.setAttribute('data-epayco-button', 'http://imgfz.com/i/oUD64Ct.png');
                     
-                            document.getElementById('epaycoForm').appendChild(script);
+                            document.querySelector('epaycoForm').appendChild(script);
                         }
                     </script>
 
