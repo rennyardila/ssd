@@ -312,9 +312,21 @@
                             script.src = 'https://checkout.epayco.co/checkout.js';
                             script.setAttribute('data-epayco-key', 'f6078fd236a757f9f5a61da215ea0156');
                             script.setAttribute('class', 'epayco-button');
-                            // Agrega los demás atributos según tus necesidades
+                            script.setAttribute('data-epayco-amount', '150000');
+                            script.setAttribute('data-epayco-tax', '0.00');
+                            script.setAttribute('data-epayco-tax-ico', '0.00');
+                            script.setAttribute('data-epayco-tax-base', '150000');
+                            script.setAttribute('data-epayco-name', 'seguidores');
+                            script.setAttribute('data-epayco-description', 'seguidores');
+                            script.setAttribute('data-epayco-currency', 'cop');
+                            script.setAttribute('data-epayco-country', 'CO');
+                            script.setAttribute('data-epayco-test', 'false');
+                            script.setAttribute('data-epayco-external', 'false');
+                            script.setAttribute('data-epayco-response', '');
+                            script.setAttribute('data-epayco-confirmation', '');
+                            script.setAttribute('data-epayco-button', 'http://imgfz.com/i/oUD64Ct.png');
                     
-                            document.body.appendChild(script);
+                            document.getElementById('epaycoForm').appendChild(script);
                         }
                     </script>
 
