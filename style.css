@@ -288,8 +288,6 @@ th, td {
 
 .product form img:active {
     background-color: #e10d0d;
-    border-radius: 30px;
-    margin-bottom: 20px;
 }
 
 .icons {
