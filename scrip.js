@@ -104,3 +104,13 @@ document.addEventListener('DOMContentLoaded', function() {
     // Agrega la función al ámbito global para que pueda ser llamada desde el botón
     window.ejecutarPago = ejecutarPago;
 });
+
+function loader(){
+    document.querySelector('.loader-container').classList.add('fade-out');
+}
+
+function fadeOut(){
+    setInterval(loader, 700);
+}
+
+window.onload = fadeOut;
