@@ -435,7 +435,7 @@ th, td {
 }
 
 .loader-container img{
-    width: 35rem;
+    width: 20rem;
 }
 
 .loader-container.fade-out{
