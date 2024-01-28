@@ -443,7 +443,9 @@ th, td {
     opacity: 0;
 }
 
-
+.footer .grupo-2 small a{
+    color: #fff;
+}
 
 
 .link h3  {
